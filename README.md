@@ -47,12 +47,3 @@ The program measures and compares the execution time of both approaches to highl
 - Displays execution time for the sequential BFS.
 - Displays execution time for the parallel BFS.
 
----
-
-## How to Run
-
-Compile the program with `gcc` (or any compatible C compiler) and link with pthread library:
-
-```bash
-gcc -o bfs bfs.c -lpthread
-./bfs
