@@ -219,7 +219,7 @@ int main() {
     addConnection(&smallGraph, A, B);
     addConnection(&smallGraph, B, C);
     addConnection(&smallGraph, A, C);
-    runSequentialAndParallel(&smallGraph, A, C, "Example 1: Sequential is faster (small graph)");
+    runSequentialAndParallel(&smallGraph, A, C, "Example 1: Small Graph");
 
     Graph largeGraph;
     initGraph(&largeGraph);
@@ -235,7 +235,7 @@ int main() {
             addConnection(&largeGraph, nodes[j], nodes[i]);
         }
     }
-    runSequentialAndParallel(&largeGraph, nodes[0], nodes[19], "Example 2: Parallel is faster (large graph)");
+    runSequentialAndParallel(&largeGraph, nodes[0], nodes[19], "Example 2: Large Graph");
 
     return 0;
 }
